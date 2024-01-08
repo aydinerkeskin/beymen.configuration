@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "a8624d9c-8658-46b6-acca-13faa23ce592",
+		"name": "Beymen.Configuration.ReadAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "679443"
+	},
+	"item": [
+		{
+			"name": "GetAsync",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5002/api/read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"read"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

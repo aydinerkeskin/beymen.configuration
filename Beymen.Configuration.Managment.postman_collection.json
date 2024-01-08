@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "b565a197-57da-4779-ac68-92b44a3da915",
+		"name": "Beymen.Configuration.Managment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "679443"
+	},
+	"item": [
+		{
+			"name": "GetConfigurationItemsAsync",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateConfigurationItemAsync",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ApplicationName\": \"SERVICE-A\",\r\n    \"Name\": \"SiteName\",\r\n    \"Type\": \"String\",\r\n    \"Value\": \"beymen.com.tr\",\r\n    \"IsActive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateConfigurationItemAsync",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ApplicationName\": \"SERVICE-A\",\r\n    \"Name\": \"SiteName\",\r\n    \"Type\": \"String\",\r\n    \"Value\": \"beymen.com.tr\",\r\n    \"IsActive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/config/659b2f26a73da69cb2ecb0cb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"config",
+						"659b2f26a73da69cb2ecb0cb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
